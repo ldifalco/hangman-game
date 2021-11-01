@@ -1,8 +1,8 @@
 class Hangman
 
     def initialize 
-        letters = ('a'..'z').to_a
-        word = words.sample
+        @letters = ('a'..'z').to_a
+        @word = words.sample
     end
 
     def words
@@ -19,4 +19,24 @@ class Hangman
 
     def begin
         #starts game asking for letter
+        puts "New game started... your word is #{ @word.first.size } characters long"
+        word_teaser = ""
+        
+        @word.first.size.times do
+            word_teaser += "_ "
+        end
+    
+
+        puts word_teaser
+        puts "Clue: #{ @word.last }"
+
+        puts "Enter a letter"
+        guess = gets.chomp
+
+
+    end
 end
+
+game = Hangman.new
+game.begin
+
