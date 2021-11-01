@@ -1,3 +1,5 @@
+![Screenshot from 2021-11-01 16-31-15](https://user-images.githubusercontent.com/81760763/139738361-fbdab35a-d7ab-4c74-8772-267628663f15.png)
+![Screenshot from 2021-11-01 16-31-46](https://user-images.githubusercontent.com/81760763/139738378-93c0cbc8-cb0d-4219-9e56-ea3dd4d00e79.png)
 # hangman-game
 
 ## Description 
