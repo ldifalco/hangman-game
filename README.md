@@ -17,7 +17,7 @@
 
 ##Installation
 
-Requires sudo Ruby install
+Requires 'sudo apt Ruby'  install
 
 ##Useage
 
