@@ -16,10 +16,8 @@ class Hangman
             ['jazz', 'tunes with feeling'],
         ]
     end
-
-    def begin
-        #starts game asking for letter
-        puts "New game started... your word is #{ @word.first.size } characters long"
+    
+    def print_teaser
         word_teaser = ""
         
         @word.first.size.times do
@@ -28,12 +26,32 @@ class Hangman
     
 
         puts word_teaser
-        puts "Clue: #{ @word.last }"
+    end
+
+    def make_guess
 
         puts "Enter a letter"
         guess = gets.chomp
 
+        #checks if letter is part of word, if not remove from letters array 
+        good_guess = @word.first.include? guess
 
+        if good_guess
+            puts "Good guess!"
+        else
+            puts "Sorry...try again!"
+    end
+end
+
+
+    def begin
+        #starts game asking for letter
+        puts "New game started... your word is #{ @word.first.size } characters long"
+        print_teaser
+
+        puts "Clue: #{ @word.last }"
+
+        make_guess
     end
 end
 
